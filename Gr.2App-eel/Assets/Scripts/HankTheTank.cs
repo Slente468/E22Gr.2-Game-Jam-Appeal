@@ -9,7 +9,8 @@ public class HankTheTank : MonoBehaviour
    public GameObject bullet_2;
    public Transform bulletPos_1;
    public Transform bulletPos_2;
-   private float timer;
+   private float timer_1;
+   private float timer_2;
    private GameObject player;
 
     void Start()
@@ -19,25 +20,26 @@ public class HankTheTank : MonoBehaviour
 
     void FixedUpdate()
     {
-        timer += Time.deltaTime;
+        timer_1 += Time.deltaTime;
+        timer_2 += Time.deltaTime;
 
         float distance = Vector2.Distance(transform.position, player.transform.position);
         Debug.Log(distance);
 
         if(distance < 30)
         {
-            if(timer > 1)
+            if(timer_1 > 1)
             {
-                timer = 0;
+                timer_1 = 0;
                 shoot();
             }
         }
 
         if(distance < 30)
         {
-            if(timer > 5)
+            if(timer_2 > 5)
             {
-                timer = 0;
+                timer_2 = 0;
                 fire();
             }
         }
