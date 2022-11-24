@@ -523,8 +523,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7693994c9df264fbbc8fc76b449f25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  charge_Text: {fileID: 0}
   movmentSpeed: 10
   rb: {fileID: 1669021307}
+  alanCharge: 0
 --- !u!50 &1669021307
 Rigidbody2D:
   serializedVersion: 4
@@ -839,7 +841,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2050607137
@@ -850,7 +852,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050607135}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -220, z: 0}
+  m_LocalPosition: {x: 3.9, y: -220, z: -10}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
