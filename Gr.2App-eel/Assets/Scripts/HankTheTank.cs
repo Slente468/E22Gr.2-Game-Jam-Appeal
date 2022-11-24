@@ -22,7 +22,7 @@ public class HankTheTank : MonoBehaviour
         timer += Time.deltaTime;
 
         float distance = Vector2.Distance(transform.position, player.transform.position);
-        Debug.Log(distance);
+     
 
         if(distance < 30)
         {

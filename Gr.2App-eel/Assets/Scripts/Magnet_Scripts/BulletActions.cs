@@ -6,20 +6,22 @@ public class BulletActions : MonoBehaviour
 {
     private GameObject player;
     private Rigidbody2D rb;
-    public float force;
     private float timer;
-
-    //Script for managing Bullet movement
-
-    public float magnetStrength = 5f;
-    public int magnetDirection = 1; // 1 = atraction -1 = Repel
-    public bool looseMagnet = true;
-    public float distanceStr = 10f; //Strentgh, based on the distance.
-
     private Transform trans;
     private Rigidbody2D thisRb;
     private Transform magnetTrans;
     private bool magnetInZone;
+
+    //Script for managing Bullet movement
+    public float force;
+    public float magnetStrength = 5f;
+    public int magnetDirection = 1; // 1 = atraction -1 = Repel
+    public bool looseMagnet = true;
+    public float distanceStr = 10f; //Strentgh, based on the distance.
+   
+
+
+   
 
      void Start()
     {
@@ -57,6 +59,7 @@ public class BulletActions : MonoBehaviour
             thisRb.AddForce(magnetDistanceStr * (directionToMagnet * magnetDirection),
                 ForceMode2D.Force);
         }
+       
     }
     private void OnTriggerEnter2D(Collider2D other) //registretion of magnet in zone 
     {
