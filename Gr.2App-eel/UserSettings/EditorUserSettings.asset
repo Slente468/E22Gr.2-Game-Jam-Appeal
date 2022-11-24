@@ -6,6 +6,7 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
+<<<<<<< HEAD
       value: 530104565505590b5d5e5c7240730f404647487a7c7876607d794d63b2b06468
       flags: 0
     RecentlyUsedSceneGuid-1:
@@ -14,6 +15,19 @@ EditorUserSettings:
     RecentlyUsedSceneGuid-2:
       value: 515250075c0c595e5f5a5e71122159444e4e4a2f7a7d7f602f284d66b4b76661
       flags: 0
+=======
+      value: 515250075c0c595e5f5a5e71122159444e4e4a2f7a7d7f602f284d66b4b76661
+      flags: 0
+    RecentlyUsedSceneGuid-1:
+      value: 5403565156060b08555d0d72127a5c44144f1b7f287172637b2a4b66e6b8673b
+      flags: 0
+    RecentlyUsedSceneGuid-2:
+      value: 0004570451545803090d5e2349760a444e4f4e732e7976342f7a1866b2e16c6c
+      flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 5a0851055506085e0e085a7b46205d4446164d79797973332c7b1966b3e4666b
+      flags: 0
+>>>>>>> parent of ff3a1bf (Revert "animation")
     vcSharedLogLevel:
       value: 0d5e400f0650
       flags: 0
@@ -22,7 +36,7 @@ EditorUserSettings:
   m_VCDebugCmd: 0
   m_VCDebugOut: 0
   m_SemanticMergeMode: 2
-  m_DesiredImportWorkerCount: 4
+  m_DesiredImportWorkerCount: 2
   m_StandbyImportWorkerCount: 2
   m_IdleImportWorkerShutdownDelay: 60000
   m_VCShowFailedCheckout: 1
