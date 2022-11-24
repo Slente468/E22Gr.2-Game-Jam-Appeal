@@ -29,6 +29,7 @@ public class AlanMovement : MonoBehaviour
         float h_Input = Input.GetAxisRaw("Horizontal");
         float v_Input = Input.GetAxisRaw("Vertical");
 
+        // normalize make the dirational movment to 1 instead of the 1.4 ish. it was on at defualt 
         moveDirction = new Vector2(h_Input, v_Input).normalized;
     }
 
