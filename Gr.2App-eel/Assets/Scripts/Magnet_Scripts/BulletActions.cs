@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class BulletActions : MonoBehaviour
 {
+    private GameObject player;
+    private Rigidbody2D rb;
+    public float force;
+    private float timer;
 
     //Script for managing Bullet movement
 
@@ -17,12 +21,32 @@ public class BulletActions : MonoBehaviour
     private Transform magnetTrans;
     private bool magnetInZone;
 
+     void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        Vector3 direction = player.transform.position - transform.position;
+        rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
+    }
     private void Awake()
     {
         trans = transform;
         thisRb = trans.GetComponent<Rigidbody2D>();
     }
-    private void FixedUpdate()
+
+    void Update()
+    {
+        timer += Time.deltaTime;
+
+        if (timer > 10)
+        {
+            Destroy(gameObject); //destroys the bullet after 10 sec
+        }
+    }
+
+
+
+    private void FixedUpdate() // notices if collision between player and some magnet takes palce. Moves player magnet.
     {
         if (magnetInZone)
         {
@@ -34,18 +58,22 @@ public class BulletActions : MonoBehaviour
                 ForceMode2D.Force);
         }
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other) //registretion of magnet in zone 
     {
-        if (other.tag == "Magnet")
+        if (other.tag == "Player")
         {
             magnetTrans = other.transform;
             magnetInZone = true;
         }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other) // 
     {
-        if (other.tag == "Magnet" && looseMagnet)
+        if (other.tag == "Player" && looseMagnet)
         {
             magnetInZone = false;
         }

@@ -7,7 +7,7 @@ public class MagnetAction : MonoBehaviour
     // script for managing magnet movement
 
     public Vector2 newPosition; // Target location
-    public bool is_destroy = false;
+    
 
     private Transform trans; // The transform of this object
 
@@ -26,9 +26,5 @@ public class MagnetAction : MonoBehaviour
     }
 
  
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Bullet")
-            Destroy(other.gameObject);
-    }
+   
 }
