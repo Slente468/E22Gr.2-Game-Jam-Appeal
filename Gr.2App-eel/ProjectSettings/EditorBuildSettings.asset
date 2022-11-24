@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Forside.unity
+    guid: c87b6eba23af2414f86d88b22694c821
+  - enabled: 1
+    path: Assets/Scenes/Danmark.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+<<<<<<< Updated upstream
+=======
+  - enabled: 1
+    path: Assets/Scenes/Japan_Cutscene.unity
+    guid: 174a4518a60e3b448bc848a9ef288de1
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+>>>>>>> Stashed changes
   m_configObjects: {}
