@@ -26,7 +26,7 @@ public class HankTheTank : MonoBehaviour
         float distance = Vector2.Distance(transform.position, player.transform.position);
         Debug.Log(distance);
 
-        if(distance < 30)
+        if(distance < 50)
         {
             if(timer_1 > 1)
             {
@@ -35,7 +35,7 @@ public class HankTheTank : MonoBehaviour
             }
         }
 
-        if(distance < 30)
+        if(distance < 50)
         {
             if(timer_2 > 5)
             {
