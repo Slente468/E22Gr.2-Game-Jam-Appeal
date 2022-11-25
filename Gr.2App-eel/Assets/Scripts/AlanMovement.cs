@@ -10,7 +10,12 @@ public class AlanMovement : MonoBehaviour
 
     private Vector2 moveDirction;
 
+    private BoxCollider2D _col;
 
+    void Start()
+    {
+        _col= GetComponent<BoxCollider2D>();
+    }
     // Update is called once per frame
     void Update()
     {

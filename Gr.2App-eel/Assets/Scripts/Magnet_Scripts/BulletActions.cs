@@ -57,6 +57,7 @@ public class BulletActions : MonoBehaviour
             thisRb.AddForce(magnetDistanceStr * (directionToMagnet * magnetDirection),
                 ForceMode2D.Force);
         }
+        press_space();
     }
     private void OnTriggerEnter2D(Collider2D other) //registretion of magnet in zone 
     {
@@ -76,6 +77,18 @@ public class BulletActions : MonoBehaviour
         if (other.tag == "Player" && looseMagnet)
         {
             magnetInZone = false;
+        }
+
+    }
+    void press_space()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            magnetDirection = magnetDirection - 3;
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && magnetDirection ==-2)
+        {
+            magnetDirection = magnetDirection = 1;
         }
 
     }

@@ -9,12 +9,36 @@ EditorBuildSettings:
     path: Assets/Scenes/Forside.unity
     guid: c87b6eba23af2414f86d88b22694c821
   - enabled: 1
-    path: Assets/Scenes/Spil.unity
+    path: Assets/Scenes/Danmark.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Danmark_Cutscene.unity
+    guid: e5e92059fcd10994ca5827ab0e6db9fa
+  - enabled: 1
+    path: Assets/Scenes/Frankrig.unity
+    guid: 9cdf709c99c1d41468869468341c9f3b
+  - enabled: 1
+    path: Assets/Scenes/Frankrig_Cutscene 1.unity
+    guid: 8f6034b1b9736b045bdb59935c638e19
+  - enabled: 1
+    path: Assets/Scenes/Italien.unity
+    guid: ceeddf28714ed0849b43c87c0db61be8
+  - enabled: 1
+    path: Assets/Scenes/Italien_Cutscene 1.unity
+    guid: 2d27b6ebd89cd7a4d83a7e7891646029
   - enabled: 1
     path: Assets/Scenes/Japan.unity
     guid: 174a4518a60e3b448bc848a9ef288de1
   - enabled: 1
-    path: Assets/Scenes/Bane2.unity
-    guid: cef6d8670ae2071479b736169edc2c01
+    path: Assets/Scenes/Japan_Cutscene.unity
+    guid: ee18426e21a04174fa401ba9efea026b
+  - enabled: 1
+    path: Assets/Scenes/USA.unity
+    guid: b91b46bf877ac1845b551a5c66cbdabe
+  - enabled: 1
+    path: Assets/Scenes/Usa_cutscene.unity
+    guid: a94e392d05fc19547a65a9174c93d0a8
+  - enabled: 1
+    path: Assets/Scenes/END.unity
+    guid: ec906f9086cc5a44d8b1c30c8288b92f
   m_configObjects: {}
