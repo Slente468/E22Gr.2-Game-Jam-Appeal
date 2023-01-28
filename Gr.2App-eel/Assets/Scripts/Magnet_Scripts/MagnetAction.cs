@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MagnetAction : MonoBehaviour
-{
+{   // Code inspired by Rescpect Studios
     // script for managing magnet movement
 
     public Vector2 newPosition; // Target location

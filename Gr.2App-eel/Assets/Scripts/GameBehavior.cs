@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 using UnityEngine.SceneManagement;
-
+// code from book Learning_C_by_Developing_Games_with_Unity_2021 chapter 7
 
 public class GameBehavior : MonoBehaviour
 {

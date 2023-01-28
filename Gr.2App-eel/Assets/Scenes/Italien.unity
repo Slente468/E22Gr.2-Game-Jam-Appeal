@@ -549,6 +549,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8210879247073005435, guid: 281538197504eae4a8477cead851b026, type: 3}
+      propertyPath: speed
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210879247073005435, guid: 281538197504eae4a8477cead851b026, type: 3}
+      propertyPath: direction.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 281538197504eae4a8477cead851b026, type: 3}
 --- !u!1001 &1263913409
@@ -819,7 +827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7693994c9df264fbbc8fc76b449f25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movmentSpeed: 10
+  movmentSpeed: 13
   rb: {fileID: 1669021307}
 --- !u!50 &1669021307
 Rigidbody2D:

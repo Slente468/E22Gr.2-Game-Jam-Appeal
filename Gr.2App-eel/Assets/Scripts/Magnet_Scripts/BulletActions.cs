@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BulletActions : MonoBehaviour
 {
+    //// Code inspired by Rescpect Studios
     private GameObject player;
     private Rigidbody2D rb;
     public float force;

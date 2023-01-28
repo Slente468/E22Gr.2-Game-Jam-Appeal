@@ -146,8 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205d4885f2b1e6943a2e282960dd2900, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5
-  magnetStrength: 10
+  force: 15
+  magnetStrength: 13
   magnetDirection: 1
   looseMagnet: 0
-  distanceStr: 15
+  distanceStr: 30

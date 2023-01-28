@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Build.Content;
+//using UnityEditor.Build.Content;
 using UnityEngine;
 using UnityEngine.UI;
+// code from https://answers.unity.com/questions/1804002/how-to-pick-up-an-item-in-2d.html
 
 public class ItemBehavior : MonoBehaviour
 {
